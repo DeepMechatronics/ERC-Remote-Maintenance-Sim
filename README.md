@@ -80,6 +80,6 @@ Simulation in Gazebo:
 $ roslaunch simulation simulator.launch 
 ```
 
-### Cuba with an ArUco marker
+### Cube with an ArUco marker
 In ur_description/meshes/ there is a .dae file containing a cube with an aruco tag (photo maker582_small_margins.png). You can import it into the simulation to try to detect it with the camera mounted on the robot, and then move the manipulator to the marker (this is one of many possible scenarios). 
 
