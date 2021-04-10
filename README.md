@@ -53,6 +53,21 @@ $ roslaunch simulation simulator.launch
 ### Requirements
 
 The simulation is mainly developed and tested on [Ubuntu 18.04 Bionic Beaver](https://releases.ubuntu.com/18.04/) with [ROS Melodic Morenia](http://wiki.ros.org/melodic/Installation/Ubuntu), so it is a recommended setup. 
+---
+__ROS Version__ : Melodic
+
+__Dependence__
+
+[universal_robot](https://github.com/ros-industrial/universal_robot) : URDFs and Meshes for UR3
+
+[ur_modern_driver](https://github.com/ros-industrial/ur_modern_driver) : Drivers for UR53.
+
+[robotiq](https://github.com/ros-industrial/robotiq) : Drivers for the Robotiq gripper.
+
+[roboticsgroup_gazebo_plugins](https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins) : For the gripper simulation in Gazebo
+
+[mongocxxdriver](http://mongocxx.org/mongocxx-v3/installation/linux/) : For robot state storage in the mongoDB warehouse 
+[Reference for mongocxxdriver](https://stackoverflow.com/questions/44723265/mongo-cxx-driver-installation-does-install-libraries)
 
 For the simulation to work properly, you must install dependencies and download repository by running the following commands: 
 ``` 
