@@ -4,8 +4,8 @@ This repository contains simulations of the Universal Robots UR3 robot created f
 
 UPDATE
 
-The simulation includes the UR3 manipulator with an attached gripper (without cover), prepared especially for this year's competition. With MoveIt, you can plan the movement of both the robot and the gripper. An RGB camera was also installed above the gripper, the image of which can be used to detect ArUco tags. 
-An example scene was also created. There are three panels on it. There is a button on the middle one with an ArUco tag above it. Next to the panel on the left side there is a box that will actually contain the IMU module. The ArUco tag is on it and on the left panel, in the place where it is to be attached . An inspection window consisting of a box and a lid has been mounted on the right-hand panel. One ArUco tag is on the lid and the other is on the box. The gripper model simulation is based on the robotiq 2f 140 gripper simulation (https://github.com/ros-industrial/robotiq) 
+The simulation includes the UR3 manipulator with an attached gripper (without cover), prepared especially for this year's competition. With MoveIt, you can plan the movement of both the robot and the gripper. An RGB camera was also installed above the gripper, the image of which can be used to detect ArUco tags. The gripper model simulation is based on the robotiq 2f 140 gripper simulation (https://github.com/ros-industrial/robotiq).
+An example scene was also created. There are three panels on it. There is a button on the middle one with an ArUco tag above it. Next to the panel on the left side there is a box that will actually contain the IMU module. The ArUco tag is on it and on the left panel, in the place where it is to be attached . An inspection window consisting of a box and a lid has been mounted on the right-hand panel. One ArUco tag is on the lid and the other is on the box. 
 
 
 ## Using Docker
