@@ -72,6 +72,7 @@ rosdep install --from-paths /catkin_ws/src/ --ignore-src --rosdistro melodic -r 
 sudo apt install ros-melodic-teleop* -y
 sudo apt install ros-melodic-joy* -y
 sudo apt install ros-melodic-aruco-ros* -y
+sudo apt-get install ros-melodic-ros-controllers* -y
 sudo apt install -y python-pip
 sudo apt install -y python3-pip
 cd /catkin_ws
