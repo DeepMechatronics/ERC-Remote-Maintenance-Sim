@@ -44,7 +44,7 @@ docker start ur3_simulation_erc
 ```
 Then, you can run command in running container:
 ```
-$ docker exec -it ur3_simulation_erc /bin/bash
+docker exec -it ur3_simulation_erc /bin/bash
 ```
 
 Now you can run commands below in docker container.
@@ -52,7 +52,7 @@ Now you can run commands below in docker container.
 UR3 simulation in Gazebo with MoveIt! and RViz GUI:
 Simulation in Gazebo:
 ```
-$ roslaunch simulation simulator.launch 
+roslaunch simulation simulator.launch 
 ```
 ## Install on the host system
 
