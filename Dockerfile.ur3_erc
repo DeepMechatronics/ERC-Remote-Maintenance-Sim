@@ -31,6 +31,9 @@ RUN apt install ros-melodic-joy* -y
 #aruco
 RUN apt install ros-melodic-aruco-ros* -y
 
+#controller
+RUN apt install ros-melodic-ros-controllers* -y
+
 #pip2
 RUN apt install -y python-pip
 
