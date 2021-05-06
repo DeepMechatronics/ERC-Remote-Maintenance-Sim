@@ -13,6 +13,9 @@ RUN mkdir -p /catkin_ws/src
 #universal_robot
 RUN cd /catkin_ws/src && git clone https://github.com/Michal-Bidzinski/ERC_2021_simulator.git
 
+#gazebo plugins
+RUN cd /catkin_ws/src && git clone https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git
+
 RUN apt install ros-melodic-industrial-core -y
 
 RUN rosdep update
