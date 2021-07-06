@@ -17,6 +17,7 @@ This functionality can be found in the ERC_2021_simulator repository.
 You can download the updated repository or add this functionality to an already existing repository by following the instructions below: 
 - in the ERC_2021_simulator repository, in the *simulation* package, create a scripts folder 
 - to the created folder, copy the gripper.py file from the ERC_2021_simulator repository in the *simulation* package in the scripts folder 
+- it is necessary to grant permissions to gripper.py: chmod 777 gripper.py
 - update the simulator.launch file, also in the *simulation* package in the launch folder 
 - update the robotiq_arg2f_140_model_macro.xacro file located in the *ur_description* package in the urdf folder 
 
