@@ -2,6 +2,27 @@
 
 This repository contains simulations of the Universal Robots UR3 robot created for the ERC competition. You can use docker with all requirements installed  ([Using Docker](#using-docker) section) or try to install them natively ([Install on the host system](#install-on-the-host-system) section).
 
+**UPDATE V2**
+
+The gripper is controlled by publishing appropriate commands on topic /gripper_command. Message type: stdmsgs/String. To control the gripper, send the following commands:
+•open
+•semi_open
+•semi_close
+•close
+
+The real gripper will also be steered this way. Due to the fact that the simulation does not fully reflect the reality, in particular the interaction between the gripped objects and the robot, the gripper in the semi-open and semi-close positions is slightly more open than it will be in reality. Thanks to this, in simulation it is easier to move the gripper to the object without detecting a collision. In reality, positions will be slightly more closed to ensure proper grip on objects. 
+
+This functionality can be found in the ERC_2021_simulator repository.
+
+You can download the updated repository or add this functionality to an already existing repository by following the instructions below: 
+- in the ERC_2021_simulator repository, in the *simulation* package, create a scripts folder 
+- to the created folder, copy the gripper.py file from the ERC_2021_simulator repository in the *simulation* package in the scripts folder 
+- update the simulator.launch file, also in the *simulation* package in the launch folder 
+- update the robotiq_arg2f_140_model_macro.xacro file located in the *ur_description* package in the urdf folder 
+
+Due to many questions about controlling the manipulator, we provide a tutorial link: https://github.com/ros-planning/moveit_tutorials/blob/master/doc/move_group_python_interface/scripts/move_group_python_interface_tutorial.py. It usesMoveIt! to allow setting joint positions and in the cartesian system. Four minor changes had to be made to work with Univerasl Robots. Changing  the variables: ”group_name” to the name of the group of the robot being used (manipulator). Changing ”boxpose.header.frameid” to ”tool0” and ”grasping_group” to ”manipulator”. It was also necessary to change the number of joints when specifying the position of each joints. The file with the above changes is called moveit_tutorial.py and is located in this repository. 
+
+
 UPDATE
 
 The simulation includes the UR3 manipulator with an attached gripper (without cover), prepared especially for this year's competition. With MoveIt, you can plan the movement of both the robot and the gripper. An RGB camera was also installed above the gripper, the image of which can be used to detect ArUco tags. The gripper model simulation is based on the robotiq 2f 140 gripper simulation (https://github.com/ros-industrial/robotiq).
