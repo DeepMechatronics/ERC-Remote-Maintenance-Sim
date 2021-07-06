@@ -5,10 +5,10 @@ This repository contains simulations of the Universal Robots UR3 robot created f
 **UPDATE V2**
 
 The gripper is controlled by publishing appropriate commands on topic /gripper_command. Message type: stdmsgs/String. To control the gripper, send the following commands:
-•open
-•semi_open
-•semi_close
-•close
+-open
+-semi_open
+-semi_close
+-close
 
 The real gripper will also be steered this way. Due to the fact that the simulation does not fully reflect the reality, in particular the interaction between the gripped objects and the robot, the gripper in the semi-open and semi-close positions is slightly more open than it will be in reality. Thanks to this, in simulation it is easier to move the gripper to the object without detecting a collision. In reality, positions will be slightly more closed to ensure proper grip on objects. 
 
